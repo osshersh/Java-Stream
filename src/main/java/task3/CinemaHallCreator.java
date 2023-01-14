@@ -28,8 +28,8 @@ public class CinemaHallCreator {
     }
 
     private class CinemaHall {
-        private String name;
-        private String type;
+        private final String name;
+        private final String type;
 
         public CinemaHall(String name, String type) {
             this.name = name;

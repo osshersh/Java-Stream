@@ -33,11 +33,13 @@ public class Menu {
     }
 
     public void printVeganPizza() {
-        pizzaList.stream().filter(pizza -> pizza.vegan).forEach(element -> System.out.println(element.name));
+        pizzaList.stream().filter(pizza -> pizza.vegan)
+                .forEach(element -> System.out.println(element.name));
     }
 
     public void printAllergensPizza() {
-        pizzaList.stream().filter(pizza -> pizza.ingredients.contains(Ingredients.SELER)).forEach(element -> System.out.println(element.name));
+        pizzaList.stream().filter(pizza -> pizza.ingredients.contains(Ingredients.SELER))
+                .forEach(element -> System.out.println(element.name));
     }
 
     public boolean isPizzaVeganWithTomatoPepper() {
@@ -50,11 +52,13 @@ public class Menu {
     }
 
     public void printMinCaloriesPizza() {
-        pizzaList.stream().min((pizza1, pizza2) -> pizza1.calories - pizza2.calories).stream().forEach(pizza -> System.out.println(pizza.name));
+        pizzaList.stream().min((pizza1, pizza2) -> pizza1.calories - pizza2.calories).stream()
+                .forEach(pizza -> System.out.println(pizza.name));
     }
 
     public void printMaxCaloriesPizza() {
-        pizzaList.stream().max((pizza1, pizza2) -> pizza1.calories - pizza2.calories).stream().forEach(pizza -> System.out.println(pizza.name));
+        pizzaList.stream().max((pizza1, pizza2) -> pizza1.calories - pizza2.calories).stream()
+                .forEach(pizza -> System.out.println(pizza.name));
     }
 
     private class Pizza {

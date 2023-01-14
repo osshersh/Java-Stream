@@ -8,10 +8,10 @@ import java.io.PrintStream;
 import static org.junit.jupiter.api.Assertions.*;
 
 class CinemaHallCreatorTest {
-    CinemaHallCreator cinemaHall;
-    PrintStream consoleStream;
-    ByteArrayOutputStream outputStream;
-    PrintStream stream;
+   private CinemaHallCreator cinemaHall;
+   private PrintStream consoleStream;
+   private ByteArrayOutputStream outputStream;
+   private PrintStream stream;
 
     @BeforeEach
     void init() {
